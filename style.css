@@ -151,14 +151,20 @@ https://www.google.com/design/spec/what-is-material/elevation-shadows.html#
 */
 body {
   font-family: 'lato';
-  font-size: 16px;
+  background: #424242;
 }
 .site {
   background: #F5F5F5;
-  min-height: 3000px;
+  z-index: 0;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .site_main {
-  max-width: 75.999rem;
+  max-width: 66.498rem;
+  margin: 0 auto;
+}
+.footer_main {
+  max-width: 66.498rem;
   margin: 0 auto;
 }
 .header_standard--navigation,
@@ -228,7 +234,7 @@ body {
   justify-content: center;
   flex-direction: column;
   border-radius: 0.334rem;
-  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.24), 0 17px 50px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
   border: solid 1px #E0E0E0;
 }
 .header_standard--outside--on {
@@ -600,4 +606,166 @@ body {
   border-top-color: #FF9800;
   border-width: 5px;
   margin-left: -5px;
+}
+.footer_standard {
+  display: flex;
+  padding: 1.416rem 0.875rem 1.416rem;
+  border-top: solid 1px #E0E0E0;
+  flex-direction: column;
+}
+.footer_standard--leftbox {
+  order: 1;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.footer_standard--leftbox ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.416rem;
+}
+.footer_standard--leftbox li {
+  flex: 1 0 33%;
+  opacity: 0.54;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.875rem;
+}
+.footer_standard--leftbox span {
+  display: none;
+}
+.footer_standard--leftbox li:first-child a {
+  color: green;
+}
+.footer_standard--rightbox {
+  text-align: center;
+  opacity: 0.54;
+  font-size: 0.875rem;
+}
+.footer_standard--leftbox ul a {
+  text-decoration: none;
+  color: #000000;
+}
+@media screen and (min-width: 1020px) {
+  .footer_standard {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .footer_standard--leftbox {
+    justify-content: flex-start;
+    order: -1;
+  }
+  .footer_standard--leftbox ul {
+    margin-top: 0;
+  }
+  .footer_standard--leftbox li {
+    flex-basis: auto;
+    padding: 0 1rem 0 0;
+  }
+  .footer_standard--rightbox {
+    text-align: right;
+    opacity: 0.54;
+  }
+}
+.footer_developer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 5.997rem 1.618rem;
+  max-width: 46.971rem;
+}
+.footer_developer--header {
+  display: flex;
+  align-items: center;
+  margin: 0 0 1rem;
+}
+.footer_developer--header img {
+  width: 2.291rem;
+  height: 2.291rem;
+}
+.footer_developer--header h2 {
+  font-size: 1.618rem;
+  padding-left: 0.618rem;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.footer_developer--header span {
+  font-weight: 300;
+  color: #FF9800;
+}
+.footer_developer--body {
+  background: #F5F5F5;
+  border-radius: 0.334rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.footer_developer--info {
+  padding: 1.416rem 1.618rem;
+  line-height: 1.416rem;
+  opacity: 0.87;
+}
+.footer_developer--action {
+  height: 4.236rem;
+  border-top: solid #E0E0E0 1px;
+  display: flex;
+  align-items: stretch;
+}
+.footer_developer--action--text {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-basis: 61.8%;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.87;
+}
+.footer_developer--action--buttonarea {
+  display: flex;
+  justify-content: center;
+  flex-basis: 38.2%;
+  border-left: solid 1px #E0E0E0;
+  background: #EEEEEE;
+  border-bottom-right-radius: 0.334rem;
+  padding: 0 0.875rem;
+}
+.footer_developer--action--buttonarea a {
+  display: flex;
+  text-decoration: none;
+}
+.footer_developer--action--button {
+  flex-basis: 100%;
+  padding: 0.875rem 0.334rem;
+  align-self: center;
+  text-align: center;
+  border-radius: 0.236rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  border: 1px soild #E65100;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+  background: linear-gradient(#26A69A, #009688 85%, #009688 90%, #009688);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+@media screen and (min-width: 450px) {
+  .footer_developer--action--text {
+    font-size: 1.416rem;
+  }
+  .footer_developer--action--buttonarea {
+    padding: 0;
+  }
+  .footer_developer--action--buttonarea a {
+    flex-basis: 61.8%;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .footer_developer--info {
+    font-size: 1.0625rem;
+    padding: 2.291rem 2.291rem;
+  }
+  .footer_developer--header img {
+    width: 2.618rem;
+    height: 2.618rem;
+  }
+  .footer_developer--header h2 {
+    font-size: 2.291rem;
+  }
 }
