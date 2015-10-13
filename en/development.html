@@ -1,0 +1,439 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+
+<head>
+
+
+<link rel="stylesheet" href="/css/jquery-ui.min.css">
+
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Development - Bitcoin</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/f132735f5f5e853ccaee92e944f2d588.css" />
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" type="text/css" href="/fd0a6cf294d0cbfc3f2fbd57f8b17a07.css" /><![endif]-->
+
+
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+
+
+
+
+
+  <script src="/js/jquery/jquery-1.11.2.min.js"></script>
+  <script src="/js/jquery/jquery-ui.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+
+
+
+
+
+<div class="head"><div>
+  
+<ul class="lang">
+  <li><a>English</a>
+  <ul>
+    <li><ul>
+      
+      
+        
+          <li><a href="/id/pengembangan">Bahasa Indonesia</a></li>
+        
+        
+          <li><a href="/da/udvikling">Dansk</a></li>
+        
+        
+          <li><a href="/de/entwicklung">Deutsch</a></li>
+        
+        
+          <li><a href="/en/development" class="active">English</a></li>
+        
+        
+          <li><a href="/es/desarrollo">Español</a></li>
+        
+        
+          <li><a href="/fr/developpement">Français</a></li>
+        
+        
+          <li><a href="/it/sviluppo">Italiano</a></li>
+        
+        
+          <li><a href="/hu/fejlesztes">Magyar</a></li>
+        
+        
+          <li><a href="/nl/ontwikkeling">Nederlands</a></li>
+        
+        
+          <li><a href="/pl/rozwoj">Polski</a></li>
+        
+        
+          <li><a href="/pt_BR/desenvolvimento">Português Brasil</a></li>
+        
+        
+          <li><a href="/ro/dezvoltare">Română</a></li>
+        
+        
+          <li><a href="/sl/razvoj">Slovenščina</a></li>
+        
+        
+          <li><a href="/sv/utveckling">Svenska</a></li>
+        
+        </ul></li><li><ul>
+          <li><a href="/tr/gelistirme">Türkçe</a></li>
+        
+        
+          <li><a href="/el/development">Ελληνικά</a></li>
+        
+        
+          <li><a href="/bg/development">български</a></li>
+        
+        
+          <li><a href="/ru/development">Русский</a></li>
+        
+        
+          <li><a href="/uk/development">Українська</a></li>
+        
+        
+          <li><a href="/ar/development">العربية</a></li>
+        
+        
+          <li><a href="/fa/development">فارسی</a></li>
+        
+        
+          <li><a href="/hi/development">हिन्दी</a></li>
+        
+        
+          <li><a href="/ko/development">한국의</a></li>
+        
+        
+          <li><a href="/ja/development">日本語</a></li>
+        
+        
+          <li><a href="/zh_CN/development">简体中文</a></li>
+        
+        
+          <li><a href="/zh_TW/development">繁體中文</a></li>
+        
+      </ul></li>
+    </ul>
+  </li>
+</ul>
+
+  
+
+<a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+
+  
+    
+
+<a class="logo" href="/en/bitcoin-core/"><img src="/img/bitcoin-core/bitcoin-core.svg" alt="Bitcoin"></a>
+
+    
+<div id="langselect" class="langselect"><select onchange="window.location=this.value;">
+    
+          <option value="/id/pengembangan">Bahasa Indonesia</option>
+    
+          <option value="/da/udvikling">Dansk</option>
+    
+          <option value="/de/entwicklung">Deutsch</option>
+    
+          <option value="/en/development" selected="selected">English</option>
+    
+          <option value="/es/desarrollo">Español</option>
+    
+          <option value="/fr/developpement">Français</option>
+    
+          <option value="/it/sviluppo">Italiano</option>
+    
+          <option value="/hu/fejlesztes">Magyar</option>
+    
+          <option value="/nl/ontwikkeling">Nederlands</option>
+    
+          <option value="/pl/rozwoj">Polski</option>
+    
+          <option value="/pt_BR/desenvolvimento">Português Brasil</option>
+    
+          <option value="/ro/dezvoltare">Română</option>
+    
+          <option value="/sl/razvoj">Slovenščina</option>
+    
+          <option value="/sv/utveckling">Svenska</option>
+    
+          <option value="/tr/gelistirme">Türkçe</option>
+    
+          <option value="/el/development">Ελληνικά</option>
+    
+          <option value="/bg/development">български</option>
+    
+          <option value="/ru/development">Русский</option>
+    
+          <option value="/uk/development">Українська</option>
+    
+          <option value="/ar/development">العربية</option>
+    
+          <option value="/fa/development">فارسی</option>
+    
+          <option value="/hi/development">हिन्दी</option>
+    
+          <option value="/ko/development">한국의</option>
+    
+          <option value="/ja/development">日本語</option>
+    
+          <option value="/zh_CN/development">简体中文</option>
+    
+          <option value="/zh_TW/development">繁體中文</option>
+    
+</select></div>
+
+    
+
+<ul id="menusimple" class="menusimple menucore" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <li><a>Features</a>
+    <ul>
+      <li><a href="/en/bitcoin-core/features/">Overview</a></li>
+      <li><a href="/en/bitcoin-core/features/validation">Validation</a></li>
+      <li><a href="/en/bitcoin-core/features/privacy">Privacy</a></li>
+      <li><a href="/en/bitcoin-core/features/requirements">Requirements</a></li>
+      <li><a href="/en/bitcoin-core/features/user-interface">User Interface</a></li>
+      <li><a href="/en/bitcoin-core/features/network-support">Network Support</a></li>
+    </ul>
+  </li>
+  <li><a href="/en/bitcoin-core/help">Get Help</a></li>
+  <li><a>Contribute</a>
+    <ul>
+      <li><a href="/en/bitcoin-core/contribute/issues">Bug reports</a></li>
+      <li class="active"><a href="/en/development">Code</a></li>
+      <li><a href="/en/bitcoin-core/contribute/documentation">Documentation</a></li>
+      <li><a href="/en/bitcoin-core/contribute/translations">Translations</a></li>
+      <li><a href="/en/bitcoin-core/contribute/support">Tech Support</a></li>
+    </ul>
+  </li>
+  <li><a href="/en/version-history">News</a></li>
+  <li><a href="/en/download">Download</a></li>
+</ul>
+
+  
+</div></div>
+
+<div class="body">
+  
+    
+
+<div class="breadcrumbs">
+  
+    
+      <a href="/en/">Bitcoin</a>
+        
+      &gt;
+    
+  
+    
+      <a href="/en/bitcoin-core/">Core</a>
+        
+      &gt;
+    
+  
+    
+      <a href="/en/bitcoin-core/contribute/">Contribute</a>
+        
+      &gt;
+    
+  
+    
+      Code
+      
+    
+  
+</div>
+
+  
+  
+
+<div id="content" class="content">
+<div class="one-column">
+  <!-- Note: this file is built non-deterministically -->
+<h1>Bitcoin development</h1>
+
+
+<p>Bitcoin is free software and any developer can contribute to the project. Everything you need is in the <a href="https://github.com/bitcoin/bitcoin">GitHub repository</a>. Please make sure to read and follow the development process described in the README, as well as to provide good quality code and respect all guidelines.</p>
+<p>Development discussion takes place on GitHub and the <a href="https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev">bitcoin-dev</a> mailing list. Less formal development discussion happens on irc.freenode.net #bitcoin-dev (<a href="#" onclick="freenodeShow(event);">web interface</a>, <a href="http://bitcoinstats.com">logs</a>).</p>
+<div id="chatbox" class="chatbox"></div>
+
+
+
+  
+<p><span class="fa fa-exclamation-triangle"></span> <em>To report an issue,
+please see the <a href="/en/bitcoin-core/contribute/issues">bug reporting</a> page.</em></p>
+
+<h2 id="code-review">Code Review</h2>
+
+<p>Bitcoin Core is security software that helps protect assets worth
+billions of dollars, so every code change needs to be reviewed by
+experienced developers.</p>
+
+<p>It can take a long time for other developers to review your pull
+requests. Remember that all reviewers are taking time away from their
+own projects to review your pull requests, so be patient and respectful
+of their time.</p>
+
+<p>Please also consider helping to review other people’s pull requests. You
+don’t need to be an expert in Bitcoin, the Bitcoin Core codebase, or C++
+(although all these things help). There are almost always <a href="https://github.com/bitcoin/bitcoin/pulls">open pull
+requests</a> that any programmer can review.</p>
+
+<h2 id="starter-projects">Starter Projects</h2>
+
+<p>Do you want to begin coding for Bitcoin Core but don’t have a specific
+improvement in mind?  Here are a few ideas:</p>
+
+<ul>
+  <li>
+    <p><strong>Fix existing issues:</strong> the <a href="https://github.com/bitcoin/bitcoin/issues">issue tracker</a> is the
+best place to find a useful way to contribute to Bitcoin Core.
+Before starting to write any patches for issues you find, you may
+want to comment on the issue to make sure nobody else is already
+working on it.</p>
+  </li>
+  <li>
+    <p><strong>Write tests:</strong> Bitcoin Core is covered by many tests, but patches
+that improve test coverage are always welcome and are a great way to
+build familiarity with the codebase.  See the documentation about
+<a href="https://github.com/bitcoin/bitcoin/blob/master/README.md#automated-testing">automated testing</a>.</p>
+  </li>
+</ul>
+
+
+
+
+
+<h2 id="spec">Documentation</h2>
+<p>If you are interested in learning more about the technical details of Bitcoin and how to use existing tools and APIs, it is recommended you start by exploring the <a href="/en/developer-documentation">developer documentation</a>.</p>
+
+
+  <input id="glossary_term" class="glossary_term" placeholder="Search the glossary, RPCs, and more">
+
+
+<section id="devcommunities">
+  <h2 id="dev-communities">Developer communities</h2>
+  <p>The following chatrooms and websites host discussions about Bitcoin development.  Please be sure to read their rules of conduct before posting.</p>
+
+  <ul>
+    <li><a href="https://webchat.freenode.net/?channels=bitcoin-dev">IRC Channel #bitcoin-dev</a> on freenode.</li>
+    <li><a href="https://bitcoin.stackexchange.com/">Bitcoin StackExchange</a></li>
+    <li><a href="https://bitcointalk.org/index.php?board=6.0">BitcoinTalk Development &amp; Technical Discussion Forum</a></li>
+  </ul>
+</section>
+
+<section id="contributors">
+  <h2 id="bitcoin-core-contributors">Bitcoin Core contributors</h2>
+  <p>(Ordered by number of commits)</p>
+  <div class="contributors">
+    
+  </div>
+</section>
+
+<h2 id="more">More free software projects</h2>
+
+<p>
+
+Want to contribute to a different project?
+
+You can choose a project to contribute to by answering a few <a href="http://whatcanidoforbitcoin.xyz/">questions about your skills</a>.</p>
+
+<ul class="devprojectlist">
+  <li><a href="https://github.com/etotheipi/BitcoinArmory">Armory</a> - A wallet with enhanced security features.</li>
+  <li><a href="http://bfgminer.com">BFGMiner</a> - A modular miner.</li>
+  <li><a href="https://en.bitcoin.it/wiki/Bitcoin_Explorer">Bitcoin Explorer</a> - A command line tool, built on libbitcoin.</li>
+  <li><a href="https://en.bitcoin.it/wiki/Bitcoin_Server">Bitcoin Server</a> - A full node and query server, built on libbitcoin.</li>
+  <li><a href="https://github.com/schildbach/bitcoin-wallet">Bitcoin Wallet</a> - A SPV wallet for Android and Blackberry.</li>
+  <li><a href="https://bitcoinj.github.io">bitcoinj</a> - A library for SPV wallets, written in Java.</li>
+  <li><a href="https://github.com/btcsuite/btcd">btcd</a> - A full node, written in Go.</li>
+  <li><a href="https://github.com/btcsuite/btcwallet">btcwallet</a> - A hierarchical deterministic wallet daemon, written in Go.</li>
+  <li><a href="https://electrum.org">Electrum</a> - A fast server-trusting wallet.</li>
+  <li><a href="https://github.com/luke-jr/eloipool">Eloipool</a> - A fast mining pool server application, written in Python.</li>
+  <li><a href="https://github.com/hivewallet">Hive</a> - A fast user-friendly SPV wallet.</li>
+  <li><a href="https://en.bitcoin.it/wiki/Libbitcoin">Libbitcoin</a> - A cross-platform development toolkit, written in C++.</li>
+  <li><a href="https://gitlab.com/bitcoin/libblkmaker">Libblkmaker</a> - A client library for the getblocktemplate mining protocol, written in C.</li>
+  <li><a href="https://multibit.org">MultiBit HD</a> - An international SPV wallet for desktops.</li>
+  <li><a href="https://github.com/NicolasDorier/NBitcoin">NBitcoin</a> - A cross-platform library, written in C#.</li>
+  <li><a href="https://github.com/jgarzik/picocoin">picocoin</a> - A tiny library with lightweight client and utilities, written in C.</li>
+  <li><a href="https://github.com/petertodd/python-bitcoinlib">python-bitcoinlib</a> - A library for structures and protocols, written in Python.</li>
+  <li><a href="https://gitlab.com/bitcoin/python-blkmaker">Python Blkmaker</a> - A client library for the getblocktemplate mining protocol, written in Python.</li>
+  <li class="more"><a onclick="librariesShow(event)" ontouchstart="librariesShow(event);" class="link-js"><span class="fa fa-caret-down"></span> Show more...</a></li>
+</ul>
+
+
+  <script src="/js/devsearch.js"></script>
+
+
+</div>
+</div>
+
+  <div class="footer">
+    
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
+  <a href="/en/legal">Legal</a>
+  
+  <a href="/en/privacy">Privacy</a>
+  
+  <a href="/en/press">Press</a>
+  <a href="/en/about-us">About bitcoin.org</a>
+  <a href="/en/blog">Blog</a>
+</div>
+
+    
+
+<div class="footersponsor">
+  <!--<div><span>A community website sponsored by</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+</div>
+
+    
+
+<div class="footerlicense">© Bitcoin Project 2009-2015 Released under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a></div>
+
+  </div>
+</div>
+
+
+
+
+
+  <script src="/js/bitcoin-core.js"></script>
+
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+</script>
+
+<script type="text/javascript" src="/js/jquery/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="/js/components/header_standard.js"></script>
+
+
+
+
+</body>
+
+</html>

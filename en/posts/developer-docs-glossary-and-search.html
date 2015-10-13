@@ -7,8 +7,8 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Bitcoin - Open source P2P money</title>
-<meta name="description" content="Bitcoin is an innovative payment network and a new kind of money. Find all you need to know and get started with Bitcoin on bitcoin.org.">
+<title>Dev Docs: New Glossary And Search Feature</title>
+
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="/f132735f5f5e853ccaee92e944f2d588.css" />
 <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/aea05d35a295129ee537890954648172.css" /><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
@@ -336,24 +336,93 @@
         
 
 <div id="content" class="content">
-  
+  <link rel="alternate" type="application/atom+xml" href="/en/rss/blog.xml" title="Bitcoin.org Site Blog">
 
-<p class="mainsummary">Bitcoin is an innovative payment network and a new kind of money.</p>
-<div class="mainvideo"><div onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);" data-youtubeurl="//www.youtube.com/embed/Gc2en3nHxA4?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1">
-  <img src="/img/video/video_wuc.jpg" alt="Youtube video">
-  <div class="mainvideoicon"></div>
-  <div class="mainvideoiconhover"></div>
-</div></div>
-<div class="mainlist">
-  <div><div><img src="/img/icons/main_ico_instant.svg" alt="Icon"><div>Fast peer-to-peer<br>transactions</div></div></div>
-  <div><div><img src="/img/icons/main_ico_worldwide.svg" alt="Icon"><div>Worldwide<br>payments</div></div></div>
-  <div><div><img src="/img/icons/main_ico_lowfee.svg" alt="Icon"><div>Low<br>processing fees</div></div></div>
+<div class="subhead-links"><a href="/en/blog">Blog home</a>
+| <a type="application/atom+xml" href="/en/rss/blog.xml"><img src="/img/icons/header_rss.svg" alt="rss" class="rssicon"> Subscribe to RSS feed</a>
+| <a href="https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/_posts/2015-04-14-new-glossary.md">Post history</a>
+| <a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?body=Source%20File%3A%20_posts/2015-04-14-new-glossary.md%0A%0A">Report issue</a></div>
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">Dev Docs: New Glossary And Search Feature</h1>
+  </header>
+
+  <article class="post-content">
+    <p><em>Thanks to <a href="https://github.com/bitcoin-dot-org/bitcoin.org/pull/793">several volunteers</a> and the financial sponsorship of <a href="https://bitcoinfoundation.org/">The
+Bitcoin Foundation</a>, we’ve added two major new features to the
+<a href="/en/developer-documentation">Bitcoin.org Developer Documentation</a>.</em></p>
+
+<p>A new <a href="/en/developer-glossary">glossary section</a> has been added to the Bitcoin.org Developer
+Documentation, and with it comes a fully-Javascript search engine that
+helps you look up glossary entries, Bitcoin Core RPCs, Bitcoin BIPs,
+Script-language op codes, and Bitcoin P2P protocol messages.</p>
+
+<h2 id="developer-glossary-main-page">Developer glossary main page</h2>
+
+<p><img src="/img/blog/free/devglossary-main-page.png" alt="Developer glossary main page" /></p>
+
+<p>The glossary main page provides a search box and a sorted list of terms.
+It uses a floating list so that it looks good on both mobiles and
+desktop/laptop screens.</p>
+
+<p>A link is provided at the bottom of the page to allow readers to
+recommend new glossary terms. (It works like the Submit New Event link
+on the <a href="/en/events">Events page</a>.)</p>
+
+<h3 id="glossary-entries">Glossary entries</h3>
+
+<p><img src="/img/blog/free/devglossary-entries.png" alt="Glossary entries" /></p>
+
+<p>Each glossary entry has its own page providing a short definition
+(limited to 255 characters), one or more synonyms, zero or more “not to
+be confused with” terms, and zero or more links to resources on and off
+Bitcoin.org. Separate pages were used to allow search engines to link
+directly to the most relevant entry, rather than forcing users to scroll
+through a giant page of definitions.</p>
+
+<p>The glossary currently has:</p>
+
+<ul>
+  <li>89 glossary entry pages</li>
+  <li>51 additional synonyms</li>
+  <li>222 links (all internal to Bitcoin.org or to Bitcoin Wiki, BitcoinTalk, or Bitcoin StackExchange)</li>
+</ul>
+
+<p>Each page includes links to edit it, view its history, or report an
+issue about it.</p>
+
+<h3 id="dev-search-box">Dev search box</h3>
+
+<p><img src="/img/blog/free/devglossary-search-box.png" alt="Glossary search box" /></p>
+
+<p>A Javascript-powered search box is added to the following pages: <a href="/en/developer-guide">Dev
+Guide</a>, <a href="/en/developer-reference">Dev Reference</a>, <a href="/en/developer-examples">Dev Examples</a>, <a href="/en/developer-glossary">Dev Glossary</a>, and individual
+glossary entry pages.</p>
+
+<p>The box allows finding the following by keyword, listed in the order
+they appear in the search:</p>
+
+<ul>
+  <li>Glossary entries (Bitcoin.org)</li>
+  <li>RPCs  (Bitcoin.org)</li>
+  <li>Op codes (Bitcoin Wiki)</li>
+  <li>BIPs (just notable and non-withdrawn BIPs; GitHub.com BIPs repo)</li>
+  <li>Bitcoin P2P protocol messages (Bitcoin.org)</li>
+</ul>
+
+<p>The search uses <a href="https://jquery.com/">JQuery</a> and <a href="https://jqueryui.com/">JQuery UI</a>, both MIT-licensed. Both are
+loaded from the Bitcoin.org server so there’s no stats leakage when
+people load them.</p>
+
+
+  </article>
+
+  <p class="post-meta">Posted to the <a href="/en/blog">Bitcoin.org Site
+  Blog</a> on 14 April 2015  by David A. Harding (<a href="mailto:dave@dtrt.org">email</a>, <a href="https://github.com/harding">GitHub</a>, <a href="http://www.reddit.com/user/harda/">Reddit</a>)
+</p>
+
 </div>
-<p class="maindesc">Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network. <b>Bitcoin is open-source; its design is public, nobody owns or controls Bitcoin and <a href="/en/support-bitcoin">everyone can take part</a></b>. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment system.</p>
-<div class="mainbutton"><a href="/en/getting-started"><img src="/img/icons/but_bitcoin.svg" alt="icon">Get started with Bitcoin</a></div>
-<div class="mainoverview">Or get a quick overview for</div>
-<div class="mainoverviews"><a href="/en/bitcoin-for-individuals">Individuals</a> <a href="/en/bitcoin-for-businesses">Businesses</a> <a href="/en/bitcoin-for-developers">Developers</a></div>
-
 
 </div>
 

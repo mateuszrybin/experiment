@@ -336,7 +336,17 @@
         
 
 <div id="content" class="content">
-  
+  <script>
+//Auto redirect to the appropriate language
+var langs={};langs['ar']=true;langs['bg']=true;langs['da']=true;langs['de']=true;langs['el']=true;langs['es']=true;langs['fa']=true;langs['fr']=true;langs['hi']=true;langs['hu']=true;langs['id']=true;langs['it']=true;langs['ja']=true;langs['ko']=true;langs['nl']=true;langs['pl']=true;langs['pt_BR']=true;langs['ro']=true;langs['ru']=true;langs['sl']=true;langs['sv']=true;langs['tr']=true;langs['uk']=true;langs['zh_CN']=true;langs['zh_TW']=true;
+var lang=(navigator.language)?navigator.language:navigator.userLanguage;
+lang=lang.split('_')[0];
+if(!langs[lang])lang='en';
+window.location.href='/'+lang+'/';
+</script>
+<!--Fallback page, don't allow indexing-->
+<meta name="robots" content="noindex">
+
 
 <p class="mainsummary">Bitcoin is an innovative payment network and a new kind of money.</p>
 <div class="mainvideo"><div onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);" data-youtubeurl="//www.youtube.com/embed/Gc2en3nHxA4?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1">
