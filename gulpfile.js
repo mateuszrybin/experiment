@@ -63,7 +63,7 @@ gulp.task('styles', function() {
 
 gulp.task('watch', function () {
     livereload.listen();
-    gulp.watch(['*.less', 'base/*.less', 'header_standard/*.less', 'footer_standard/*.less', 'footer_developer/*.less'], ['styles']);
+    gulp.watch(['*.less', 'base/*.less', 'header_standard/*.less', 'footer_standard/*.less', 'footer_developer/*.less', 'body_standard/*.less'], ['styles']);
     gulp.watch(['*.html'], ['html']);
 });
 
